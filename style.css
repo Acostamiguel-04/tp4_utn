@@ -1,0 +1,528 @@
+/* tipo de fuente */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;800&display=swap');
+
+/*  fuente  al body */
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+}
+
+
+/* estilos generales */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*estilos img*/
+
+.img_container{
+    background-size: cover;
+    background-position: center center;
+}
+
+/*estilos h2*/
+body h2{
+    font-size: 55px;
+    color: #333;
+}
+
+/*  estilo  al los h2 > body */
+body a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+}
+
+/* estilizando title_overline */
+.title_overline{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 75px 0 20px;
+    width: 100%;
+    /* background-color: #333; */
+}
+
+/* estilizando title_overline > h2 para que el h2 quede centrado en mobile */
+.title_overline h2{
+   text-align: center;
+}
+
+/* estilizando line > title_overline */
+.line{
+    width: 5%;
+    padding: 2.2px;
+    margin-top: 6px;
+    border-radius: 20px;
+    background-color: #ffcd27;
+}
+
+
+
+/* HEADER */
+header{
+    background-image: url(images/hero_1.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+
+/*estilos barra navegacion*/
+
+.navbar_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 35px 0;
+    
+    margin: 0 250px;
+}
+
+.logo_container{
+    display: flex;
+    align-items: center;
+}
+
+
+.logo_container .logo_img{
+    width: 50px;
+}
+
+
+.logo_text{
+    font-size: 35px;
+    font-family: 'Poppins';
+    font-weight: normal;
+    color: #fff;
+    margin: 0 8px;
+    transition: color, 200ms ease;
+}
+
+.logo_text:hover{
+    color: #f1d272;
+}
+
+
+.links a, i{
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 18px;
+    font-weight: 400;
+    transition: color, 200ms ease;
+}
+
+
+.links a:hover{
+    color: #f1d272;
+    
+}
+
+
+.links i:hover{
+    color: #f1d272;
+}
+
+/*finaliza la barra de navegacion*/
+
+
+
+/* estilos  hero */
+
+.hero{
+    display: flex;
+    width: 100%;
+    height: 90vh;
+}
+
+
+.hero_left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 100px;
+}
+
+
+.text_hero{
+    width: 100%;
+    height: 70vh;
+    padding: 80px 0 0 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text_hero h3{
+    font-size: 40px;
+    color: #fff;
+    width: 100%;
+}
+
+.text_hero h2{
+    font-size: 180px;
+    color: #fff;
+    width: 100%;
+    position: relative;
+    z-index: 500;
+}
+
+
+.color_span{
+    color: #ffcd27;
+}
+
+.text_hero p{
+    font-size: 20px;
+    color: #fff;
+    width: 100%;
+    position: relative;
+    z-index: 600;
+}
+
+
+.tarjets_hero{
+    width: 40%;
+    height: 90vh;
+}
+
+
+.tarjets_hero .tarjet{
+   width: 250px;
+   border-radius: 10px;
+   margin: 5px;
+   background-size: cover;
+   background-position: center center;
+}
+
+
+.tarjets_hero .img1{
+    width: 500px;
+    height: 350px;
+    background-image: url(images/hero_2.jpg);
+    position: relative;
+    z-index: 200;
+    right: 150px;
+    top: 10px;
+}
+
+
+.tarjets_hero .img2{
+    width: 350px;
+    height: 400px;
+    background-image: url(images/hero_3.jpg);
+    position: relative;
+    z-index: 300;
+    left: 20px;
+    top: 20px;
+}
+
+
+.tarjets_hero .img3{
+    width: 380px;
+    height: 370px;
+    background-image: url(images/hero_4.jpg);
+    position: relative;
+    z-index: 100;
+    left: 280px;
+    bottom: 600px;
+}
+
+
+.social_networks{
+    display: flex;
+    align-items: center;
+    margin-top: 45px;
+    width: 100%;
+    margin: 0 0 0 260px;
+}
+
+.social_networks > a{
+    font-size: 20px;
+    margin: 0 8px;
+}
+
+/*finaliza el estilo hero*/
+
+
+/*comienza seccion 2*/
+
+.seccion_2 {
+   
+    height: 100vh;
+    background-image: url(images/fondo.jpg);
+    background-size: cover;
+    background-position: center center;
+   
+}
+
+.box {
+    font-family: 'Poppins';
+    font-weight: 600;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.img_2 {
+    width: 30rem;
+    box-shadow: 1px 1px 8px  white;
+    border: none;
+    border-radius: 7px;
+    margin: 20px 0px 30px 0px;
+    transition: transform 0.2s;
+}
+
+.img_2:hover {
+    transform: scale(1.10);
+}
+
+.tour {
+    font-family: 'Poppins';
+    padding: 100px;
+    font-size: 45px;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.texto_2 > h3 {
+    color: white;
+    font-size: 19px;
+    padding: 0px 0px 20px 0px;
+    text-align: center;
+
+}
+
+.texto_2 > p {
+    font-size: 13px;
+    line-height: 22px;
+    font-weight: 300;
+    color: white;
+    text-align: center;
+}
+
+.boton_2 > button {
+    font-family: 'Poppins';
+    background-color: white;
+    margin-top: 20px;
+    font-weight: 600;
+    color: black;
+    border: 1px solid white;
+    border-radius: 9px;
+    padding: 15px 40px 15px 40px;
+    transition: 0.3s;
+    cursor: pointer;
+    margin-left: 155px;
+
+}
+
+/*finaliza seccion 2*/
+
+
+/* Seccion 3*/
+
+.seccion_3 {
+    font-family: 'Poppins';
+    padding: 0px;
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    height: 80vh;
+    background-image: url(images/fondo2.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-blend-mode: multiply;
+}
+
+.about {
+    padding: 156px 0px 95px 0px;
+    margin-right: 3%;
+}
+
+.about > h2 {
+    color: #f9f9f9;
+    font-family: 'Poppins';
+    font-weight: 600;
+    padding-bottom: 35px;
+    font-size: 45px;
+}
+
+.about > p {
+    line-height: 27px;
+    font-family: 'Poppins';
+    display: block;
+    padding:4px 0px 10px 0px ;
+    font-weight: 400;
+    font-size: 17px;
+    color: #f9f9f9;
+    z-index: 1;
+}
+
+
+
+
+.box3 {
+    width: 49vh;
+    height: 72vh;
+}
+
+.img_about{
+    width: 36rem;
+    padding-top: 37%;
+    border-radius: 7px;
+    transition: transform 0.2s;
+}
+
+/* Seccion 4  */
+
+
+
+.contacto{
+    height: 90vh;
+    background-image: linear-gradient(#a4a4a4 ,#000000); 
+    
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+/*es el tamaño y centrado del formulario*/
+.formulario{
+    position: relative;
+    align-items: center;
+    width: 600px;
+    padding: 30px;
+    margin: auto;
+    border-radius: 4px;
+
+/*modifique el h1*/
+}
+.formulario h1{
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-size: 60px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+/*cambio de color el asterico*/
+.abajo span{
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+}
+
+
+/*los inputs de abajo*/
+.abajo{
+    display: flex;
+    flex-direction: column;
+  
+}
+/*diseño de los labels*/
+.formulario label{
+    color:white;
+    font-size: 14px;
+    padding-top: 25px;
+    padding-bottom: 15px;
+}
+/*diseño de los placeHolder*/
+.formulario input{
+    color: black;
+    font-size: 16px;
+    outline: none;
+    
+}
+/*diseño de todas las cajas*/
+.formulario input[type=text],input[type=email]{
+    border-radius: 13px;
+    border-style: none;
+    
+    
+}
+/*diseño de las cajas de inputs de abajo*/
+.abajo input[type=text],input[type=email]{
+    padding: 18px 0px;
+    padding-left: 17px;
+    padding-right: 75px;
+    box-shadow: 1px 1px 8px rgb(60, 33, 24);
+}
+/*diseño de las cajas de inputs*/
+.abajo .grande[type=text]{
+    padding-bottom: 150px ;
+    
+}
+/*diseño de los button*/
+.abajo button{
+    cursor: pointer;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    margin: 0 auto;
+    margin-top: 34px;
+    width: 32%;
+    font-size: 17px;
+    border-radius: 10px;
+    border-style: none;
+    padding: 15px 0px;
+    box-shadow: 3px 3px 20px rgb(127, 127, 127);
+    transition-property: background-color,color;
+    transition-duration: 0.6s;
+    font-weight: 600;
+}
+/*diseño y animacion para el boton*/
+.abajo button:hover{
+    background-color: white;
+    color: rgb(90, 63, 63);
+}
+
+/* footer inicio */
+footer{
+    height: 15vh;
+    background-color: black;
+}
+.iconosfoot{
+    display: flex;
+    justify-content: center;
+}
+.iconosfoot a{
+    margin-left: 3%;
+    color: white;
+    margin-top: 3%; 
+}
+.iconosfoot i{
+    font-size: 20px;
+}
+
+footer a:hover{
+    color: #ffc348;
+}
+footer i:hover{
+    font-size: 25px;
+}
+.footer i{
+    transition: color, 0.5s;
+}
+
+ .creadores{
+    padding-top: 17px;
+    text-align: center;
+    font-size: 14px;
+    font-family: 'Poppins';
+    color: white;
+    
+    margin-left: 73px;
+    }
+/* footer final */
+
+
+
+
+
+
